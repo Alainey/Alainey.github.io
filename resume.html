@@ -13,7 +13,7 @@ body {
 	margin-top: 60px;
 	display: grid;
   	grid-template-columns: 100px 1fr 1fr 1fr 100px;
-  	grid-template-rows:  50px 50px 150px 1fr 1fr 100px;
+  	grid-template-rows:  50px 50px 150px 1fr 1fr 100px 50px;
 	justify-content: center;
 }
 
@@ -46,6 +46,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	align-content: space-between;
 	font-family: 'Comfortaa', cursive;
 	grid-row: 2;
 	grid-column: 4;
@@ -84,6 +85,14 @@ body {
 .footnote-content {
 	display: flex;
 	justify-content: center;
+}
+
+.icon {
+    opacity: 0.6;
+}
+
+.icon:hover {
+    opacity: 1.0;
 }
 
 a:link {
@@ -125,7 +134,12 @@ a:hover {
   </div>
 
   <div class="footnote">
-  	<div class="footnote-content">[social media icons]</div>
+  	<div class="footnote-content">
+  		<p><a href="https://www.facebook.com/100009292999786"><img src="images/facebook.png" class="icon"></a>
+  		<a href="https://www.linkedin.com/in/alainey-hellman/"><img src="images/linkedin.png" class="icon"></a>
+  		<a href="http://mis-elani-ous.tumblr.com/"><img src="images/tumblr.png" class="icon"></a>
+  		<a href="https://github.com/Alainey"><img src="images/github.png" class="icon"></a></p>
+  	</div>
   	<div class="footnote-content">alainey_hellman@brown.edu</div>
   </div>
 
