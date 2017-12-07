@@ -93,6 +93,14 @@ body {
     opacity: 1.0;
 }
 
+.image {
+    width:50%;
+}
+
+.image-desc {
+    font-size: 18px;
+}
+
 a:link {
     color: black;
     text-decoration: none;
@@ -106,16 +114,6 @@ a:visited {
 a:hover {
     color: salmon;
     text-decoration: none;
-}
-
-img {
-    opacity: 0.6;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
-}
-img:hover {
-    opacity: 1.0;
 }
 
 </style>
@@ -132,15 +130,36 @@ img:hover {
 
   <div class="about-block">
   	<div class="about">
-  		[Description of the App]
-  		<p>[Description of the App]</p>
-  		<p>[Description of the App]</p>
+  		<p><b>Overview:</b> Earlier this year, I did a critique of <a href="http://www.goldilocks-usa.com/" style="color:salmon;" target="_blank">Goldilocks USA Bakeshop's</a> webstore interface. This critique can be found <a href="https://medium.com/@Alainey/critique-journal-4-b35e7090a82f" style="color:salmon;" target="_blank">here</a>. In this publication, I wrote about how disjoint and unintuitive ceretain aspects of Goldilocks' storefront are, and proposed possible solutions. Building off of this critique, I decided to redesign certain pages of Goldilocks' webstore in order to make them more accessable and understandable. I created five simple wireframe mockups with Balsamiq, and a single detailed page mockup with Framer.</p>
+
+  		<p><b>Usability Redesign:</b> The interface has been redesigned to improve user learnability, usability, efficiency of use, and overall satisfaction with the site. Wireframes for the Goldilocks’ Front Page, Store Front, Store, Cart, and Log In pages have all been redesigned with these goals in mind.</p><br>
+
+  		<center><img src="images/chart.PNG" class="image"><br><div class="image-desc">Interface Usability Comparison Chart</div></center><br>
+  		<center><img src="images/g1.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Website Front</div></center><br>
+  		<center><img src="images/g2.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Store Front</div></center><br>
+  		<center><img src="images/g3.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Store</div></center><br>
+  		<center><img src="images/g4.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Cart</div></center><br>
+  		<center><img src="images/g5.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Log In</div></center><br>
+
+  		<p><b>Visual Redesign:</b> The page that redesigned is Goldilocks’ Cart. I have designed this page with a layout similar to that of the Goldilocks’ site front, and have done away with the more confusing aspects of the original site: the two different checkout buttons, the unnecessarily long shipping information, the inclusion of “item number” alongside quantity, and the confusing “update” and “delete” buttons for removing items. The alignment, color, and spacing of the site elements are all redesigned to fit with Goldilocks’ overall color scheme and site design.</p><br>
+
+  		<center><img src="images/redesign.PNG" class="image"><br><div class="image-desc">Visual Redesign of Goldilocks' Cart Interface</div></center><br>
+
+  		<p><b>Responsive Design Decisions:</b> In order to make this interface responsive, I designed it with CSS Flexbox in mind.</p>
+
+		<p>Looking at Object 1 in the Visual Redesign above, we can see that it spans 100% of the screen. This will be true for any screen size, be it desktop or mobile. However, since the menu items (“Online Order,” “View Cart,” etc.) will look cluttered being pushed together on a mobile device’s screen, they will instead condense into a hamburger-style menu button for mobile display.</p>
+
+		<p>Object 2 is the primary “bulk” of the page – the vertical container that holds a minimum of three smaller, horizontal flexboxes. The first box holds a button to continue shopping and a small cart icon; both of these objects will become closer or farther apart, as both are justified to either side of Object 2. The last box, Object 4, holds the order summary information, and a button to checkout. Object 3 makes up the middle objects – each is a horizontal flexbox with information regarding the items in the cart. The information contained here are all in boxes relative to each other, and the ratio of space will be maintained when the screen size is changed. Object 2 will take up the whole width of the screen for mobile devices.</p>
+
+		<p>Finally, Object 5 will scale with the current space ratios it has on any given screen, save mobile. For mobile screens, Object 5 will also span the entire width of the screen, and text will loop if necessary.</p>
+
+  		<p><b>Conclusion:</b> I found this project engaging primiarly becasue it allowed me to build off my work from earlier in the semester. This project was intended as a thinkpiece for me in regards to responsive webpages (those designed for both desktop and mobile use). In that sense, I feel as though this project was successful. Ultimately, the design I came up with is not particularly unique, but still more usable and intuative than Goldilocks' current site.</p>
   	</div>
   </div>
 
   <div class="nav">
   	<p><a href="works.html" class="nav-link">Works</a></p>
-  	<p><a href="resume.html" class="nav-link">Resume</a></p>
+  	<p><a href="https://drive.google.com/a/brown.edu/file/d/1cP29QNrZUOIMg6HeoUzlUsCuFMoVO1fJ/view?usp=sharing" class="nav-link" target="_blank">Resume</a></p>
   	<p><a href="about.html" class="nav-link">About</a></p>
   	<p><a href="contact.html" class="nav-link">Contact</a></p>
   </div>

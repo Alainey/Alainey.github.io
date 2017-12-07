@@ -93,6 +93,14 @@ body {
     opacity: 1.0;
 }
 
+.image {
+    width:60%;
+}
+
+.image-desc {
+    font-size: 18px;
+}
+
 a:link {
     color: black;
     text-decoration: none;
@@ -106,16 +114,6 @@ a:visited {
 a:hover {
     color: salmon;
     text-decoration: none;
-}
-
-img {
-    opacity: 0.6;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
-}
-img:hover {
-    opacity: 1.0;
 }
 
 </style>
@@ -132,15 +130,22 @@ img:hover {
 
   <div class="about-block">
   	<div class="about">
-  		[Description of the App]
-  		<p>[Description of the App]</p>
-  		<p>See the completed application deployed on Heroku <a href="https://evening-springs-65891.herokuapp.com/" style="color:salmon;">here</a>.</p>
+		The completed application can be viewed on Heroku <a href="https://evening-springs-65891.herokuapp.com/" style="color:salmon;" target="_blank">here</a>.
+
+  		<p><b>Overview:</b> This app is based on the popular "Puzzle and Dragons" phone game. The goal of this application is to give a user personalized information on select Monsters from the game. There are thousands of Monster cards in the game itself, but this application aims to gives information on only a small subset of Monster cards - those that are owned and managed by the user. The user can interact with the webpage in a few different ways: through the filter dropdowns, through the seach bar, or through various buttons. These elements work together to display select Monster data on the page.</p><br>
+
+  		<center><img src="images/PAD_Filter.PNG" class="image"><br><div class="image-desc">Application Header and Filter Options</div></center><br>
+  		<center><img src="images/PAD_Monsters.PNG" class="image"><br><div class="image-desc">Sample of Monster Cards and Details</div></center><br>
+
+  		<p><b>Design Challenges and Decisions:</b> During the project's conception, I'd originally wanted a way to add and delete new Monster data from the database. This would allow users to personalize the application based on the Monster cards they themselves owned. However, I ultimately scrapped implementing such a feature, given both my time constraints and the simple scope of the project assignment.</p>
+
+  		<p><b>Conclusion:</b> This project introduced me to the React JavaScript library, and the experience went well enough that I intend to utilize React in future projects. There are a lot of features that I did not have the time (or means) to implement in this application, but I hope to build off the JavaScript knowledge I gained from it all the same.</p>
   	</div>
   </div>
 
   <div class="nav">
   	<p><a href="works.html" class="nav-link">Works</a></p>
-  	<p><a href="resume.html" class="nav-link">Resume</a></p>
+  	<p><a href="https://drive.google.com/a/brown.edu/file/d/1cP29QNrZUOIMg6HeoUzlUsCuFMoVO1fJ/view?usp=sharing" class="nav-link" target="_blank">Resume</a></p>
   	<p><a href="about.html" class="nav-link">About</a></p>
   	<p><a href="contact.html" class="nav-link">Contact</a></p>
   </div>
