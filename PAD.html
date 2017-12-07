@@ -13,7 +13,7 @@ body {
 	margin-top: 60px;
 	display: grid;
   	grid-template-columns: 100px 1fr 1fr 1fr 100px;
-  	grid-template-rows:  50px 50px 150px 1fr 1fr 100px 50px;
+  	grid-template-rows:  50px 50px 100px 1fr 1fr 100px 50px;
 	justify-content: center;
 }
 
@@ -36,6 +36,7 @@ body {
 }
 
 .status-item {
+	font-weight: bold;
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
@@ -51,76 +52,25 @@ body {
 	grid-column: 4;
 }
 
-.nav-link{
+.nav-link {
 	display: flex;
 	width: 100px;
 } 
 
-.item1 {
-	grid-row: 4;
-	grid-column: 2;
+.about-block {
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	display: flex;
+	grid-row: 4 / 6;
+	grid-column: 2 / 5;
 }
 
-.item2 {
-	grid-row: 4;
-	grid-column: 3;
-}
-
-.item3 {
-	grid-row: 4;
-	grid-column: 4;
-}
-
-.item4 {
-	grid-row: 5;
-	grid-column: 2;
-}
-
-.item5 {
-	grid-row: 5;
-	grid-column: 3;
-}
-
-.item6 {
-	grid-row: 5;
-	grid-column: 4;
-}
-
-.item1 img {
-	width: 90%;
-	height: auto;
-}
-
-.item2 img {
-	width: 90%;
-	height: auto;
-}
-
-.item3 img {
-	width: 90%;
-	height: auto;
-}
-
-.item4 img {
-	margin-top: 20px;
-	width: 90%;
-	height: auto;
-}
-
-.item5 img {
-	margin-top: 20px;
-	width: 90%;
-	height: auto;
-}
-
-.item6 img {
-	margin-top: 20px;
-	width: 90%;
-	height: auto;
+.about {
+	width:100%; 
+	height:100%;
 }
 
 .footnote {
-	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	align-content: flex-end;
@@ -164,7 +114,6 @@ img {
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
 }
-
 img:hover {
     opacity: 1.0;
 }
@@ -176,9 +125,17 @@ img:hover {
 
 <body>
   <a href="index.html" class="title">Alainey Hellman</a>
+
   <div class="status">
-  	<div class="status-item">Computer Science Concentrator - Brown University</div>
-  	<div class="status-item">Computer Graphics, UI/UX, Visual Design</div>
+  	<div class="status-item">Puzzle and Dragons Monster Filtering App</div>
+  </div>
+
+  <div class="about-block">
+  	<div class="about">
+  		[Description of the App]
+  		<p>[Description of the App]</p>
+  		<p>See the completed application deployed on Heroku <a href="https://evening-springs-65891.herokuapp.com/" style="color:salmon;">here</a>.</p>
+  	</div>
   </div>
 
   <div class="nav">
@@ -187,13 +144,6 @@ img:hover {
   	<p><a href="about.html" class="nav-link">About</a></p>
   	<p><a href="contact.html" class="nav-link">Contact</a></p>
   </div>
-
-  <div class="item1"><center><a href="PAD.html"><img src="images/Development.png"></a></center></div>
-  <div class="item2"><center><a href="Goldilocks.html"><img src="images/Development.png"></a></center></div>
-  <div class="item3"><center><a href="Critique.html"><img src="images/Development.png"></a></center></div>
-  <div class="item4"><center><a href="Betrayal.html"><img src="images/Development.png"></a></center></div>
-  <div class="item5"><center><a href="sculpture.html"><img src="images/Development.png"></a></center></div>
-  <div class="item6"><center><a href="sculpture.html"><img src="images/Development.png"></a></center></div>
 
   <div class="footnote">
   	<div class="footnote-content">
