@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Chivo|Comfortaa:300|Montserrat" rel="stylesheet">
+
+<style type="text/css">
+
+body {
+	margin-top: 60px;
+	display: grid;
+  	grid-template-columns: 100px 1fr 1fr 1fr 100px;
+  	grid-template-rows:  50px 50px 100px 1fr 1fr 100px 50px;
+	justify-content: center;
+}
+
+.title {
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	grid-row: 2;
+	grid-column: 2;
+}
+
+.status {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	font-family: 'Comfortaa', cursive;
+	grid-row: 3;
+	grid-column: 2 / 5;
+}
+
+.status-item {
+	font-weight: bold;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: space-between;
+	font-family: 'Comfortaa', cursive;
+	grid-row: 2;
+	grid-column: 4;
+}
+
+.nav-link {
+	display: flex;
+	width: 100px;
+} 
+
+.about-block {
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	display: flex;
+	grid-row: 4 / 6;
+	grid-column: 2 / 5;
+}
+
+.about {
+	width:100%; 
+	height:100%;
+}
+
+.footnote {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	font-family: 'Comfortaa', cursive;
+	grid-row: 6;
+	grid-column: 2 / 5;
+}
+
+.footnote-content {
+	display: flex;
+	justify-content: center;
+}
+
+.icon {
+    opacity: 0.6;
+}
+
+.icon:hover {
+    opacity: 1.0;
+}
+
+.image {
+    width:50%;
+}
+
+.image-desc {
+    font-size: 18px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: salmon;
+    text-decoration: none;
+}
+
+</style>
+
+<title>Alainey Hellman</title>
+</head>
+
+<body>
+  <a href="index.html" class="title">Alainey Hellman</a>
+
+  <div class="status">
+  	<div class="status-item">Goldilocks USA Bakeshop Redesign</div>
+  </div>
+
+  <div class="about-block">
+  	<div class="about">
+  		<p><b>Overview:</b> Earlier this year, I did a critique of <a href="http://www.goldilocks-usa.com/" style="color:salmon;" target="_blank">Goldilocks USA Bakeshop's</a> webstore interface. This critique can be found <a href="https://medium.com/@Alainey/critique-journal-4-b35e7090a82f" style="color:salmon;" target="_blank">here</a>. In this publication, I wrote about how disjoint and unintuitive ceretain aspects of Goldilocks' storefront are, and proposed possible solutions. Building off of this critique, I decided to redesign certain pages of Goldilocks' webstore in order to make them more accessable and understandable. I created five simple wireframe mockups with Balsamiq, and a single detailed page mockup with Framer.</p>
+
+  		<p><b>Usability Redesign:</b> The interface has been redesigned to improve user learnability, usability, efficiency of use, and overall satisfaction with the site. Wireframes for the Goldilocks’ Front Page, Store Front, Store, Cart, and Log In pages have all been redesigned with these goals in mind.</p><br>
+
+  		<center><img src="images/chart.PNG" class="image"><br><div class="image-desc">Interface Usability Comparison Chart</div></center><br>
+  		<center><img src="images/g1.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Website Front</div></center><br>
+  		<center><img src="images/g2.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Store Front</div></center><br>
+  		<center><img src="images/g3.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Store</div></center><br>
+  		<center><img src="images/g4.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Cart</div></center><br>
+  		<center><img src="images/g5.PNG" class="image"><br><div class="image-desc">Wireframe of Goldilocks' Log In</div></center><br>
+
+  		<p><b>Visual Redesign:</b> The page that redesigned is Goldilocks’ Cart. I have designed this page with a layout similar to that of the Goldilocks’ site front, and have done away with the more confusing aspects of the original site: the two different checkout buttons, the unnecessarily long shipping information, the inclusion of “item number” alongside quantity, and the confusing “update” and “delete” buttons for removing items. The alignment, color, and spacing of the site elements are all redesigned to fit with Goldilocks’ overall color scheme and site design.</p><br>
+
+  		<center><img src="images/redesign.png" class="image"><br><div class="image-desc">Visual Redesign of Goldilocks' Cart Interface</div></center><br>
+
+  		<p><b>Responsive Design Decisions:</b> In order to make this interface responsive, I designed it with CSS Flexbox in mind.</p>
+
+		<p>Looking at Object 1 in the Visual Redesign above, we can see that it spans 100% of the screen. This will be true for any screen size, be it desktop or mobile. However, since the menu items (“Online Order,” “View Cart,” etc.) will look cluttered being pushed together on a mobile device’s screen, they will instead condense into a hamburger-style menu button for mobile display.</p>
+
+		<p>Object 2 is the primary “bulk” of the page – the vertical container that holds a minimum of three smaller, horizontal flexboxes. The first box holds a button to continue shopping and a small cart icon; both of these objects will become closer or farther apart, as both are justified to either side of Object 2. The last box, Object 4, holds the order summary information, and a button to checkout. Object 3 makes up the middle objects – each is a horizontal flexbox with information regarding the items in the cart. The information contained here are all in boxes relative to each other, and the ratio of space will be maintained when the screen size is changed. Object 2 will take up the whole width of the screen for mobile devices.</p>
+
+		<p>Finally, Object 5 will scale with the current space ratios it has on any given screen, save mobile. For mobile screens, Object 5 will also span the entire width of the screen, and text will loop if necessary.</p>
+
+  		<p><b>Conclusion:</b> I found this project engaging primiarly becasue it allowed me to build off my work from earlier in the semester. This project was intended as a thinkpiece for me in regards to responsive webpages (those designed for both desktop and mobile use). In that sense, I feel as though this project was successful. Ultimately, the design I came up with is not particularly unique, but still more usable and intuative than Goldilocks' current site.</p>
+  	</div>
+  </div>
+
+  <div class="nav">
+  	<p><a href="works.html" class="nav-link">Works</a></p>
+  	<p><a href="https://drive.google.com/a/brown.edu/file/d/1cP29QNrZUOIMg6HeoUzlUsCuFMoVO1fJ/view?usp=sharing" class="nav-link" target="_blank">Resume</a></p>
+  	<p><a href="about.html" class="nav-link">About</a></p>
+  	<p><a href="contact.html" class="nav-link">Contact</a></p>
+  </div>
+
+  <div class="footnote">
+  	<div class="footnote-content">
+  		<p><a href="https://www.facebook.com/100009292999786" target="_blank"><img src="images/facebook.png" class="icon"></a>
+  		<a href="https://www.linkedin.com/in/alainey-hellman/" target="_blank"><img src="images/linkedin.png" class="icon"></a>
+  		<a href="http://mis-elani-ous.tumblr.com/" target="_blank"><img src="images/tumblr.png" class="icon"></a>
+  		<a href="https://github.com/Alainey" target="_blank"><img src="images/github.png" class="icon"></a></p>
+  	</div>
+  	<div class="footnote-content">alainey_hellman@brown.edu</div>
+  </div>
+
+</body>
+</html>
