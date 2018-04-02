@@ -13,7 +13,7 @@ body {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 100px 1fr 100px;
-  grid-template-rows: 50px 50px 20px 1fr 50px 50px;
+  grid-template-rows: 50px 50px 20px 1fr 0px 10px;
   justify-content: center;
   font-family: 'Comfortaa', cursive;
   color: grey;
@@ -66,7 +66,7 @@ body {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   grid-row: 4;
   grid-column: 2;
 }
@@ -84,13 +84,15 @@ body {
 .item {
   margin-bottom: 15px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 15px;
-  width: 100%;
+  width: 70%;
 }
 
 .item img {
-  display: flex;
-  width: 60%;
+  display: block;
+  width: 90%;
   height: auto;
 }
 
@@ -158,13 +160,14 @@ a:hover {
   <div class="main">
     <div class="page"><p><b>About Me</b></p><br></div>
 
-  	<div class="item" style="justify-content: center;"><center><img src="images/me_wide.jpg" class="profile"></center><br></div>
+  	<div class="item" style="width:30%;"><img src="images/me/me_side.jpg" class="profile"><br></div>
 
-  	<div class="item">Hi there! My name is Alainey Hellman. I'm a third year concentrator at Brown University studying Computer Science. As a computer science student, I'm particularly interested in the integration of technology and art, and I aim to produce interactive work that showcases an intersection of the two.</div>
+  	<div class="item">Hi there! My name is Alainey Hellman. I'm a third year concentrator at Brown University studying Computer Science. As a computer science student, I'm particularly interested in the integration of technology and art, and I aim to produce interactive work that showcases an intersection of the two.
 
-  	<div class="item">This site was originally created as a simple digital portfolio for the course CS 1300 - User Interfaces and User Experiences. It currently features pieces from this class, alongside personal projects and sculpture work.</div>
+      <p>This site was originally created as a simple digital portfolio for the course CS 1300 - User Interfaces and User Experiences. It currently features pieces from this class, alongside personal projects and sculpture work.</p>
 
-  	<div class="item">Feel free to reach out to me here, or elsewhere on social media.</div>
+      <p>Feel free to reach out to me here, or elsewhere on social media.</p>
+    </div>
   </div>
 
   <div class="footnote">
