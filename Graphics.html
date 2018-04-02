@@ -83,7 +83,20 @@ body {
 
 .item {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.image-list img {
+  width: 30%;
 }
 
 .item img {
@@ -157,25 +170,34 @@ a:hover {
     <div class="page"><p><b>Virtual Reality Atmospheric Scene</b></p><br></div>
 
   	<div class="item">
-		<p>The completed application can be viewed on Heroku <a href="https://evening-springs-65891.herokuapp.com/" style="color:salmon;" target="_blank"> here</a>.</p>
+		<p>The code for this project can be foun don my github <a href="https://github.com/Alainey/VRGraphics-1230" style="color:salmon;" target="_blank"> here</a>.</p>
   	</div>
 
   	<div class="item" style="margin-bottom:15px;">
-  		<p><b style="color: #515151; font-size: 18px;">Overview:</b> This app is based on the popular "Puzzle and Dragons" phone game. The goal of this application is to give a user personalized information on select Monsters from the game. There are thousands of Monster cards in the game itself, but this application aims to gives information on only a small subset of Monster cards - those that are owned and managed by the user. The user can interact with the webpage in a few different ways: through the filter dropdowns, through the seach bar, or through various buttons. These elements work together to display select Monster data on the page.</p><br>
+  		<p><b style="color: #515151; font-size: 18px;">Overview:</b> This project is a collaborative piece designed and programmed by myself and a fellow classmate. This project is a Vive-compatible simulation that places the user in the middle of a densely foggy lake. Our goal was to create an atmospheric scene inspired by natural hot springs, with realistic water movement and the inclusion of fog/steam.</p><br>
   	</div>
 
-  	<div class="item" style="justify-content:center; margin-bottom:15px;"><center><img src="images/PAD_Filter.PNG"><br></div>
-  	<div class="item" style="color: #515151; font-weight: bold; justify-content:center; margin-bottom:25px;">Application Header and Filter Options</div></center>
+  	<div class="item" style="justify-content:center; margin-bottom:15px;"><center><img src="images/Graphics/large.PNG"><br></div>
+  	<div class="item" style="color: #515151; font-weight: bold; justify-content:center; margin-bottom:25px;">Screenshot of the Completed Scene</div></center>
 
-  	<div class="item" style="justify-content:center; margin-bottom:15px;"><center><img src="images/PAD_Monsters.PNG"><br></div>
-  	<div class="item" style="color: #515151; font-weight: bold; justify-content:center; margin-bottom:25px;">Sample of Monster Cards and Details</div></center>
+  	<div class="image-list" style="justify-content:center; margin-bottom:15px;"><center>
+  		<img src="images/Graphics/scene_prelim.PNG">
+  		<img src="images/Graphics/scene_prelim_trees.PNG"><br></div>
+  	<div class="item" style="color: #515151; font-weight: bold; justify-content:center; margin-bottom:25px;">Preliminary Trees (Generated with Lindenmayer Systems)</div></center>
+
+  	<div class="item"  style="margin-bottom:15px;">
+  		<p><b style="color: #515151;margin-bottom:15px;">Design Challenges and Decisions:</b> Time was one of our biggest constraints with this project. We had a lot of ideas that we wanted to incorperate into our final project, but didn't have nearly enough time to add them all.</p>
+  	</div>
+
+  	<div class="item" style="justify-content:center; margin-bottom:15px;"><center><img src="images/Graphics/large_4.PNG"><br></div>
+  	<div class="item" style="color: #515151; font-weight: bold; justify-content:center; margin-bottom:25px;">Screenshot of the Completed Scene</div></center>
 
   	<div class="item">
-  		<p><b style="color: #515151; font-size: 18px;">Design Challenges and Decisions:</b> During the project's conception, I'd originally wanted a way to add and delete new Monster data from the database. This would allow users to personalize the application based on the Monster cards they themselves owned. However, I ultimately scrapped implementing such a feature, given both my time constraints and the simple scope of the project assignment.</p>
+  		<p><b style="color: #515151; font-size: 18px;">Conclusion:</b> There are many aspects of this project that I wish we had improved on. The L-system trees are unrealistic due to being made up of only lines, and - although they're creepy as they are - they don't really fit with the rest of the scene. Adding greater width to the lower nodes, as well as forming the branches with scaled cylinders as opposed to lines, would have been two ways in which we would have done this.</p>
   	</div>
 
   	<div class="item">
-  		<p><b style="color: #515151; font-size: 18px;">Conclusion:</b> This project introduced me to the React JavaScript library, and the experience went well enough that I intend to utilize React in future projects. There are a lot of features that I did not have the time (or means) to implement in this application, but I hope to build off the JavaScript knowledge I gained from it all the same.</p>
+  		<p>Additionally, all of our land masses are made out of scaled up spheres, and I would have likes to add a bit more detail to these as well. We were considering bump-mapping and/or simple terrain generation for our islands, but we never had time to implement either.</p>
   	</div>
   </div>
 
